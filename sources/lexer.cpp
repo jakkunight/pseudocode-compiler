@@ -1,4 +1,4 @@
-#include "lexer.h"
+#include "lexer.hpp"
 
 LEXER::LEXER(char* filepath){
 	file.open(filepath);

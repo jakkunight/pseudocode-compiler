@@ -22,7 +22,7 @@ set(EXT_LINK_DIRS
 foreach(clase ${CLASES})
 	add_library(
 		${clase} STATIC
-		${CMAKE_CURRENT_SOURCE_DIR}/headers/${clase}.h
+		${CMAKE_CURRENT_SOURCE_DIR}/headers/${clase}.hpp
 		${CMAKE_CURRENT_SOURCE_DIR}/sources/${clase}.cpp
 	)
 endforeach(clase ${CLASES})
