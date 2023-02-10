@@ -12,7 +12,7 @@ add_definitions(${LLVM_DEFINITIONS_LIST})
 
 # Libs and clases for the project:
 set(CLASES
-	
+	lexer
 	)
 set(LIBS
 	)
@@ -21,9 +21,9 @@ set(EXT_LINK_DIRS
 	)
 foreach(clase ${CLASES})
 	add_library(
-		pseudocode_compiler STATIC
-		${CMAKE_CURRENT_SOURCE_DIR}/headers/${clase}.hpp
-		${CMAKE_CURRENT_SOURCE_DIR}/headers/${clase}.cpp
+		${clase} STATIC
+		${CMAKE_CURRENT_SOURCE_DIR}/headers/${clase}.h
+		${CMAKE_CURRENT_SOURCE_DIR}/sources/${clase}.cpp
 	)
 endforeach(clase ${CLASES})
 add_executable(psc ${CMAKE_CURRENT_SOURCE_DIR}/sources/main.cpp)
@@ -38,8 +38,11 @@ target_link_libraries(psc ${llvm_libs})
 
 # Linking clases and libraries:
 foreach(clase ${CLASES})
-	target_link_libraries(psc PUBLIC
+	target_link_libraries(psc
 	${clase}
 	)
+endforeach(clase ${CLASES})
+foreach(clase ${CLASES})
 	target_include_directories(${clase} PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/headers")
 endforeach(clase ${CLASES})
+
