@@ -12,7 +12,7 @@ add_definitions(${LLVM_DEFINITIONS_LIST})
 
 # Libs and clases for the project:
 set(CLASES
-	lexer
+	
 	)
 set(LIBS
 	)
@@ -41,6 +41,13 @@ foreach(clase ${CLASES})
 	target_link_libraries(psc
 	${clase}
 	)
+	foreach(class ${CLASES})
+		if(NOT ${clase} STREQUAL ${class})
+			target_link_libraries(${clase}
+				${class}
+				)
+		endif(NOT ${clase} STREQUAL ${class})
+	endforeach(class ${CLASES})
 endforeach(clase ${CLASES})
 foreach(clase ${CLASES})
 	target_include_directories(${clase} PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/headers")

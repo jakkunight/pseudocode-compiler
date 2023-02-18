@@ -1,5 +1,6 @@
 INICIO
-	NÚMERO A, B
+	IMPRIMIR("==== PROGRAMA FACTORIAL ====")
+	NUMERO A, B
 	LEER(A, B)
 	SI A > B ENTONCES
 		IMPRIMIR(A, "es mayor que ", B)
@@ -8,11 +9,11 @@ INICIO
 		A = A + 1
 		IMPRIMIR("Acercando A a B...")
 	FINMIENTRAS
-	IMPRIMIR("Múltiplos de", B)
+	IMPRIMIR("Multiplos de", B)
 	DESDE I = 0 HASTA B
 		IMPRIMIR(I * B)
 	FINDESDE
-	IMPRIMIR("Múltiplos de", B)
+	IMPRIMIR("Multiplos de", B)
 	factorial = 1;
 	DESDE I = 0 HASTA A
 		factorial = factorial * I

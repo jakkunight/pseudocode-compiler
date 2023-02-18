@@ -1,21 +1,27 @@
 # Especificación del lenguaje (v1.0)
+## Convenciones generales y lineamientos:
+- Los nombres de variables e identificadores NO pueden ser escritos con carácteres con tilde.
+- Se pueden utilizar barras bajas/underlines (_) para escribir dichos nombres.
+- El lenguaje distingue entre mayúscules y minúsculas (case-sensitive).
+- Se pueden utilizar números naturales para la escritura de nombres de variables e identificadores.
+- Los nombres de variables o identificadores NUNCA pueden iniciar con un número.
+- Los nombres de variables e identificadores NUNCA deben ser palabras reservadas del lenguaje (keywords).
+- Las variables son de tipado fuerte y dinámico/estático, como TypeScript. 
 ## Tipos de datos:
 - ENTERO (Enteros)
-- NÚMERO (Números Reales)
+- NUMERO (Números Reales)
 - TEXTO (Texto)
 - BOOLEANO (Booleano)
-- BYTE (Byte)
-- CONSTANTE (Constantes)
 ## Sentencias:
 - SI/ENTONCES/FINSI (Condicionales)
 - MIENTRAS/HACER/FINMIENTRAS (Bucles simples)
 - REPETIR/HASTA (Repeticiones)
 - DESDE/HASTA/PASO/FINDESDE (Bucles "DO-FOR")
-- FUNCIÓN/RETORNAR (Funciones y subrutinas)
-- SWITCH/CASO (Condicional "Switch-Case")
+- FUNCION/RETORNAR (Funciones y subrutinas)
+- ENCASOQUE/SEAIGUALQUE/FINCASO/FINENCASOQUE (Condicional "Switch-Case")
 - LEER (Leer variables por teclado)
 - IMPRIMIR (Mostrar texto o variables por pantalla)
-- CLASE/PRIVADO/PÚBLICO/CONSTRUCTOR/EXTIENDE/FINCLASE (Clases)
+- CLASE/PRIVADO/PUBLICO/CONSTRUCTOR/EXTIENDEA/FINCLASE (Clases)
 ## Operadores aritméticos:
 - \+ (Suma)
 - \- (Diferencia)
@@ -43,3 +49,5 @@
 - VERDADERO (verdadero en expresiones booleanas. 0 en números)
 - FALSO (falso en expresiones booleanas. 1 o -1 en números)
 - NULO (nulo o cero. También representa objetos, arrays y textos vacíos)
+## Comentarios:
+- \# (Línea de comentario)
