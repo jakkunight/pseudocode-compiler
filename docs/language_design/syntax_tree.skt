@@ -1,0 +1,15 @@
+[Syntax Tree]:
+let tipodato = [
+	"entero",
+	"número",
+	"texto",
+	"booleano"
+];
+let Dato = {
+	tipo_dato: ""
+};
+let Tratamiento = {
+	argumentos: [],
+	retorno: Dato(),
+	bloque: Dato()
+};
