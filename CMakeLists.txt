@@ -13,6 +13,7 @@ add_definitions(${LLVM_DEFINITIONS_LIST})
 # Libs and clases for the project:
 set(CLASES
 	lexer
+	ast
 	)
 set(LIBS
 	)
