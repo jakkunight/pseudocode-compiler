@@ -158,13 +158,16 @@ REPEAT_UNTIL::REPEAT_UNTIL(
 }
 
 // DESDE-HASTA-PASO-FINDESDE:
-REPEAT_UNTIL::REPEAT_UNTIL(
+FOR::FOR(
 	Type t,
-	unique_ptr<EXPRESSION> 
-	unique_ptr<EXPRESSION>
-	unique_ptr<EXPRESSION>
-	unique_ptr<EXPRESSION>
-):EXPRESSION(){}
+	const string &i,
+	unique_ptr<EXPRESSION> st,
+	unique_ptr<EXPRESSION> e,
+	unique_ptr<EXPRESSION> s,
+	unique_ptr<EXPRESSION> b
+):EXPRESSION(t){
+	
+}
 
 
 
